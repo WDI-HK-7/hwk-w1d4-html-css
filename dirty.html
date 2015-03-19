@@ -1,44 +1,68 @@
 <html>  
+
   <head>
-    <h1>WDI London September 2013
+
+<!-- Error in h1 tag, it is not closed. And the tag should not be in head tag but in the body tag.÷\ -->
+
+
     <meta value="description" content="Web development immersive ">
+
   </head>
-  <div class="body">
+
+  <!-- Error, there is no body tag, instead it has been labeled as a div with a class of body. this should just be <body></body> -->
+  <body>
+
+  <h1> WDI London September 2013 </h1>
+
     <div>
         <div>
         </div>
         <div>
           <div>Web Development Immersive <div>General&nbsp;Assembly:&nbsp;Autumn/Winter&nbsp;2013</div></div>
-          <div id="nav">
-            <div>
-              <div><link hef="#program">Program</link></div>
-              <div><link href="#students">Students</link></div>
-              <div><link hrf="#concepts">Concepts</link></div>
-              <div><link href="#instructors">Instructors</link></div>
-            </div>
-          </div>
+
+          <!-- Error, there is no nav tag but instead replaced with a div tag with an id of nav, it should be just <nav> </nav> -->
+
+          <nav>
+
+          <!-- Error, instead of having div elements to list this in nav it should be a ul with li, instead of having individual div tags the link tag should also be an a tag <a href="></a>-->
+
+            <ul>
+              <li><a hef="#program">Program</a></li>
+              <li><a href="#students">Students</a></li>
+              <li><a hrf="#concepts">Concepts</a></li>
+              <li><a href="#instructors">Instructors</a></li>
+            </ul>
+          </nav>
         </div>
     </div>
+
+    <!-- <a name> is not supported in html5 -->
     <a name=program></a>
     <div>
       <div>
         <div>
-          <div id="title" class="h3">The Program</div>
+
+        <!-- Error, where a <h3> tag can be used it has been replaced with a div with an id and a class named h3. It should be just <h3> -->
+          <h3>The Program</h3>
           <a name="program"></link>
           <div>              
-            <div>12 weeks of intensive web development training learning a range of programming techniques and languages.</d>
+          <!-- Error here, <div> tag is not closed properly with a </div> -->
+            <div>12 weeks of intensive web development training learning a range of programming techniques and languages.</div>
           </div>
         </div>
         <div>
           <div>
-            <div id="title">The Students</h5>
+          <!-- Error here, the h5 tag was not started but instead had a div tag with an id of title, can be just <h5> -->
+            <h5>The Students</h5>
             <a name="students"></a>
-            <div>The London WDI Session 3 Coding Collective</h3> 
+            <!-- Error here, the h3 tag was not started but instead had a div tag. it should be just <h3> -->
+            <h3>The London WDI Session 3 Coding Collective</h3> 
             <div>We faced missing routes, broken links, aborted rake tasks, rejected mass-assignments, failed deployments, nilClasses, illegal nestings, conflicted merges, rougue debuggers, unexpected keyword ends, incomplete divs, unintentional infinite loops, uncooperative asset pipelines, empty migrations, unresponsive APIs, undefined defined methods, overly-sassy css, dirty data, faulty gems, terrible animated gifs, excessive pizza, punchy classmates, demanding instructors and long days. And we won!</div>
           
           
         </div>
-        <div >
+        <!-- There is an extra space here in the <div > tag. -->
+        <div>
           
           <div>
             <div>The Concepts</div>
@@ -47,76 +71,78 @@
  
             <div>
                 <div>
-                  <div>
-                    <div>OOP</div>
-                    <div>Agile Development</div>
-                    <div>TDD</div>
-                    <div>BDD</div>
-                    <div>Ruby</div>
-                    <div>Variables</div>
-                    <div>Conditionals</div>
-                    <div>Blocks</div>
-                    <div>Enumerators</div>
-                    <div>Strings, Symbols</div>
-                    <div>Arrays, Hashes</div>
-                    <div>Methods</div>
-                    <div>Classes</div>
-                    <div>Inheritance</div>
-                    <div>Scope</div>
-                    <div>Patterns</div>
-                    <div>Refactoring</div>
-                  </div>
+                <!-- Perhaps a better usage of ul/ol li here can be used inplace of using many div tags -->
+                  <ul>
+                    <li>OOP</li>
+                    <li>Agile Development</li>
+                    <li>TDD</li>
+                    <li>BDD</li>
+                    <li>Ruby</li>
+                    <li>Variables</li>
+                    <li>Conditionals</li>
+                    <li>Blocks</li>
+                    <li>Enumerators</li>
+                    <li>Strings, Symbols</li>
+                    <li>Arrays, Hashes</li>
+                    <li>Methods</li>
+                    <li>Classes</li>
+                    <li>Inheritance</li>
+                    <li>Scope</li>
+                    <li>Patterns</li>
+                    <li>Refactoring</li>
+                  </ul>
                 </div>
             </div>
             <div>
               <div>
-                <div>
-                  <div>HTTP Requests</div>
-                  <div>URL, URI</div>
-                  <div>Networking</div>                    
-                  <div>SSH</div>
-                  <div>Sessions</div>
-                  <div>Authentication</div>
-                  <div>Authorization</div>
-                  <div>Web Scraping</div>
-                  <div>Cookies</div>
-                  <div>HTTP APIs</div>
-                  <div>RESTful APIs</div>
-                  <div>HTTParty</div>                    
-                  <div>Uploads</div>
-                  <div>File I/O</div>
-                  <div>Amazon S3 AWS</div>
-                  <div>Sublime</div>
-                  <div>Environment variables</div>                    
-                </div>
+              <!-- Same concern, peraps a better useage of ul/ol li can be used here instead of so many divs a long with the rest of the divs listed below-->
+                <ul>
+                  <li>HTTP Requests</li>
+                  <li>URL, URI</li>
+                  <li>Networking</li>                    
+                  <li>SSH</li>
+                  <li>Sessions</li>
+                  <li>Authentication</li>
+                  <li>Authorization</li>
+                  <li>Web Scraping</li>
+                  <li>Cookies</li>
+                  <li>HTTP APIs</li>
+                  <li>RESTful APIs</li>
+                  <li>HTTParty</li>                    
+                  <li>Uploads</li>
+                  <li>File I/O</li>
+                  <li>Amazon S3 AWS</li>
+                  <li>Sublime</li>
+                  <li>Environment variables</li>                    
+                </ul>
               </div>
             </div>
             <div>
               <div>
-                <div>
-                  <div>Version Control</div>
-                  <div>Git and Github</div>
-                  <div>Sinatra</div>                    
-                  <div>Rails</div>
-                  <div>MVC</div>
-                  <div>Models</div>
-                  <div>Views</div>
-                  <div>Controllers</div>
-                  <div>Routing</div>                    
-                  <div>i18n</div>
-                  <div>Helpers</div>
-                  <div>Mailers</div>
-                  <div>Serializers</div>
-                  <div>Modules</div>
-                  <div>Callbacks</div>
-                  <div>Rake Tasks</div>
-                  <div>Rails Console</div>
-                </div>
+                <ul>
+                  <li>Version Control</li>
+                  <li>Git and Github</li>
+                  <li>Sinatra</li>                    
+                  <li>Rails</li>
+                  <li>MVC</li>
+                  <li>Models</li>
+                  <li>Views</li>
+                  <li>Controllers</li>
+                  <li>Routing</li>                    
+                  <li>i18n</li>
+                  <li>Helpers</li>
+                  <li>Mailers</li>
+                  <li>Serializers</li>
+                  <li>Modules</li>
+                  <li>Callbacks</li>
+                  <li>Rake Tasks</li>
+                  <li>Rails Console</li>
+                </ul>
               </div>
             </div>
             <div>
               <div>
-                <div>
+                <ul>
                   <div>ActiveRecord</div>
                   <div>Migrations</div>
                   <div>Validations</div>
@@ -134,12 +160,12 @@
                   <div>Exceptions</div>
                   <div>Exception Handling</div>
                   <div>Logs</div>
-                </div>
+                </ul>
               </div>
             </div>
             <div>
               <div>
-                <div>
+                <ul>
                   <div>Cancan</div>
                   <div>Carrierwave</div>
                   <div>Bcrypt</div>
@@ -157,12 +183,12 @@
                   <div>Geocoder</div>
                   <div>Jekyll</div>
                   <div>Better Errors</div>
-                </div>
+                </ul>
               </div>
             </div>
             <div>
               <div>
-                <div>
+                <ul>
                   <div>Javascript</div>
                   <div>jQuery</div>
                   <div>Coffeescript</div>
@@ -180,14 +206,15 @@
                   <div>CSS</div>
                   <div>SCSS, SASS</div>
                   <div>Bootstrap</div>
-                </div>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         <div>
           <div>
-            <div>The Instructors</div>
+          <!-- Perhaps using a <h#> tag here would be better than a new div to show The Instructors. -->
+            <h3>The Instructors</h3>
             <a name="instructors"></a>
             <div>They taught us everything we know</div> 
             <div>Well, let's be honest. They taught us a lot more than we know, but some of it didn't commit to memory. But we are hackers now, thanks to these four.</div>
@@ -202,4 +229,4 @@
       <div>
         <div id="span">Web Development Immersive Course Webpage</div> General Assembly London <div id="span">2013</div id="span">
         </div>
-    </div>
+    </body>
